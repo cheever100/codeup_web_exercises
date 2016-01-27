@@ -1,0 +1,73 @@
+
+
+	/* First Box */
+
+		.red {
+			    background-color: red;
+			    width: 150px;
+			    height: 50px;
+			    padding: 10px;
+			    border: 1px solid black;
+			    margin-bottom: 10px
+			}
+
+
+	/* Second Box */
+
+		.orange {
+			    background-color: orange;
+			   	width: 150px;
+			    height: 50px;
+			    padding: 10px;
+			    border: 1px solid black;
+			    margin-left: 30px;
+			    margin-bottom: 10px;
+			}
+
+	/* Third Box */
+
+		.yellow {
+			    background-color: yellow;
+			    width: 150px;
+			    height: 50px;
+			    padding: 10px;
+			    margin-left: 60px;
+			    border: 1px solid black;
+			    margin-bottom: 10px
+			}
+			
+	/* Fourth Box */
+
+		.green {
+			    background-color: green;
+			    width: 150px;
+			    height: 50px;
+			    padding: 10px;
+			    border: 1px solid black;
+			    margin-left: 90px;
+			    margin-bottom: 10px
+			}
+	
+	/* Fifth Box */
+		
+		.blue {
+			    background-color: blue;
+			    width: 150px;
+			    height: 50px;
+			    padding: 10px;
+			    border: 1px solid black;
+			    margin-left: 120px;
+			    margin-bottom: 10px
+			}
+	
+	/* Sixth Box */
+
+		.violet {
+			    background-color: violet;
+			    width: 150px;
+			    height: 50px;
+			    padding: 10px;
+			    border: 1px solid black;
+			    margin-left: 150px;
+			    margin-bottom: 10px
+			}

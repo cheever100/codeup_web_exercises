@@ -1,0 +1,57 @@
+		
+
+		.box {
+				width: 50px;
+			    height: 50px;
+			    padding: 10px;
+			    border: 1px solid black;	    
+			    margin-top: 50px;
+			    margin-left: 50px;
+			    margin-right: 50px;
+			    margin-bottom: 50px
+			}
+
+
+	/* First Box */
+
+		.red {
+			    background-color: red;    
+			}
+
+			div {
+				float: left;
+			}
+
+	/* Second Box */
+
+		.orange {
+			    background-color: orange;   	
+			}
+			
+
+	/* Third Box */
+
+		.yellow {
+			    background-color: yellow;
+			}
+			
+
+	/* Fourth Box */
+
+		.green {
+			    background-color: green;
+			
+			    clear:left;
+			}
+
+	/* Fifth Box */
+		
+		.blue {
+			    background-color: blue;    
+			}
+	
+	/* Sixth Box */
+
+		.violet {
+			    background-color: violet;    
+			}
