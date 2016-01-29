@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Switch Statement JS</title>
+</head>
+
+<body>
+
+<h3>Switch Statement JS</h3>
+
+<script>
+
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var color = colors[Math.floor(Math.random()*colors.length)];
+
+
+
+switch (color) {
+    case "red":
+        console.log("Red reminds me of Santa.");
+        break;
+    case "orange":
+        console.log("Orange reminds me of Halloween");
+        break;
+    case "yellow":
+        console.log("Yellow reminds me of Easter");
+        break;
+    case "green":
+    	console.log("Green reminds me of Summer.");
+    	break;
+    case "blue":
+        console.log("Green reminds me of Spring.");
+        break;
+    
+    default:
+        console.log("I do not know anything by that color.");
+    }
+ 
+ 
+</script>
+</body>
+</html>
+
+
