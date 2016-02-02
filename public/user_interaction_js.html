@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<title>User Interaction JS</title>
+</head>
+<body>
+
+
+<script>
+
+"use strict";
+
+// todo: Ask the user for their name.
+//       Keep asking if an empty input is provided.
+
+	var response = prompt('What is your name?');
+	
+// todo: Show an alert message that welcomes the user based on their input.	
+	if (response != null) {
+		console.log ("Hello " + response + "! How are you today?");
+	}
+
+// todo: Ask the user if they like pizza.
+
+var confirmed = confirm('Is pizza ok for you?');
+
+//       Based on their answer show a creative alert message.
+
+alert('Great, we serve pizza every Friday!');
+
+</script>
+
+
+
+</body>
+</html>
