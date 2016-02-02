@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>1 Switch Statement JS</title>
+</head>
+
+<body>
+
+<script>
+
+"use strict"
+
+var whatAmI = "I am a string.";
+
+if (typeof whatAmI === "boolean") {
+    console.log("You are a boolean.");
+	} else if (typeof whatAmI === "number") {
+	    console.log("You are a number.");
+	} else if (typeof whatAmI === "string") {
+	    console.log("You are a string.");
+	} else if (typeof whatAmI === "function" || typeof whatAmI === "object") {
+	    console.log("You are an object.");
+	} else if (typeof whatAmI === "undefined") {
+	    console.log("You are undefined.");
+	} else {
+	    console.log("I have no clue.");
+	}
+
+</script>
+
+</body>
+
+</html>

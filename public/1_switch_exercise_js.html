@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>1 Switch Exercise Using Case JS</title>
+</head>
+
+<body>
+
+<script>
+
+"use strict"
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var color = colors[Math.floor(Math.random()*colors.length)];
+
+switch (color) {
+    case "red":
+        console.log("You are red.");
+        break;
+    case "orange":
+        console.log("You are orange.");
+        break;
+    case "yellow":
+        console.log("You are yellow.");
+        break;
+    case "green":
+        console.log("You are green.");
+        break;
+    case "blue":
+        console.log("You are blue.");
+        break;
+    default:
+        console.log("You are indigo or violet.");
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Practice Loop</title>
+</head>
+<body>
+
+	<script>
+
+	"use strict"
+
+
+// will execute a code block as long as a certain condition is true.
+
+	var i = 0;
+
+	while (i < 10) {
+	    
+	    console.log(i);
+	    
+	    i++;
+	}
+
+// the condition i < 10 is never true, so the code in the while loop never gets executed. 
+
+	var i = 10;
+
+	while (i < 10) {
+    
+    	console.log(i);
+    	
+    	i++;
+	}
+
+// the code in the do block will get executed once, before the while condition is checked.
+
+	var i = 10;
+
+	do {
+    
+    	console.log(i);
+    
+    	i++;
+
+	} while (i < 10);
+
+
+	</script>
+
+</body>
+</html>
