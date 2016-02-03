@@ -11,11 +11,62 @@
 // todo:
 // Create an array of 4 names using literal array notation, in a variable called 'names'.
 
+var names = ["Suzanne", "Cece", "Joan", "Charlie"];
+
 // todo:
 // Create a log statement that will log the number of elements in the names array.
 
+console.log ("The number of elements in the array is " + names.length);
+
+
 // todo:
 // Create log statements that will print each of the names array elements individually.
+
+console.log ('The first is ' + names[0]);
+console.log ('The second is ' + names[1]);
+console.log ('The third is ' + names[2]);
+console.log ('The fourth is ' + names[3]);
+
+//Modify the code that logs out the names array elements individually to instead use a for loop.
+//Below the for loop, use a forEach loop to print the names again.
+
+//For Each Loop
+
+names.forEach(function(element, index, array) {
+    
+    console.log ("The name at index " + index + " is " + element);
+
+});
+
+//For Loop
+
+for (var i = 0; i<names.length; i++){
+	console.log ("The name at index " + i + " is " + names[i]);
+}
+
+//reversing order
+
+	var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+	console.log(colors);
+
+	console.log('Reversing the colors array.');
+
+	colors.reverse();
+
+	console.log(colors);
+
+//sorting (deault is ascending alpha/numeric order)
+
+	var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+	console.log(colors);
+
+	console.log('Sorting the colors array.');
+
+	colors.sort();
+
+	console.log(colors);
 
 
 

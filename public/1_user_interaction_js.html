@@ -9,15 +9,28 @@
 
 	"use strict";
 
-	var response = prompt('What is your name?');
+	var message = prompt('What is your name?');
 
-	alert('Great, welcome ' + response + ' to the website.');
+	if (message != null) {
+		message = message.trim();
+		}
 
-	var confirmed = confirm('Do you like pizza?');
+	while (message == "" || message == null){
+		message = prompt('We need your name!')
 
-	if (confirmed) {
-    console.log ("Good, because it is all we eat around here!")
-	}
+		if (message != null) {
+			message = message.trim();
+			}
+
+	alert('Great, welcome ' + message + ' to the website.');
+
+	var choice = confirm('Do you like pizza?');
+
+	if (choice) {
+    	alert("Good, because it is all we eat around here!")
+		} else {
+    	console.log("Too bad!")		
+		}
 
 	// todo: Ask the user for their name.
 //       Keep asking if an empty input is provided.
