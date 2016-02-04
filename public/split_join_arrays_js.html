@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<title>Split Join Arrays JS</title>
+</head>
+<body>
+
+
+	<script>
+	"use strict";
+
+	// todo:
+	// Copy the array of planets you created in the last lesson.
+
+	var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+	
+	console.log(planets);
+
+
+	// todo: Join the planets array with pipes (|) to create a variable named 'planetsAsString'.
+	
+	var planetsAsString = planets.join('|');
+
+	console.log(planetsAsString);
+
+
+	// todo: Split the 'planetsAsString' variable by pipes (|) to create a variable named 'planetsAsArray'.
+
+
+	var planetsAsArray = planetsAsString.split('|');
+
+	console.log(planetsAsArray);
+
+
+	//build a loop that iterates across an array and converts it into a string
+
+	//build your own join function
+
+	// declare and initialize array
+	var shapes = ['square', 'rectangle', 'circle', 'triangle'];
+
+	// loop through the array and log the values
+	for (var i = 0; i < shapes.length; i++) {
+    console.log('The shape at index ' + i + ' is: ' + shapes[i]);
+	}
+
+	var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+	console.log(planets)
+	for (var i = 0; i < planets.length; i++) {
+	console.log('The planet, in order of closest to furthest from the sun is ' + planets[i];)
+	}
+
+	var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+
+	// loop through the array and log the values
+	planets.forEach(function (element, index, array) {
+
+	    
+	    console.log('The planet at index ' + index + ' is: ' + element);
+	});
+
+//HERE IS THE ACTUAL ANSWER
+
+	var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+
+	function join(array, delimeter){
+		var string = "";
+
+		array.forEach(function(element, index){
+			if (string != "") {
+				string = string +delimeter;
+			}
+			string = string + element;
+		});
+		
+		return string;
+	}
+	
+	var result = join(planets, ",");
+	console.log(result);
+
+
+
+	</script>	
+</body>
+</html>
