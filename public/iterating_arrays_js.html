@@ -13,6 +13,8 @@
 
 var names = ["Suzanne", "Cece", "Joan", "Charlie"];
 
+
+
 // todo:
 // Create a log statement that will log the number of elements in the names array.
 
@@ -30,43 +32,24 @@ console.log ('The fourth is ' + names[3]);
 //Modify the code that logs out the names array elements individually to instead use a for loop.
 //Below the for loop, use a forEach loop to print the names again.
 
-//For Each Loop
-
-names.forEach(function(element, index, array) {
-    
-    console.log ("The name at index " + index + " is " + element);
-
-});
-
 //For Loop
 
 for (var i = 0; i<names.length; i++){
 	console.log ("The name at index " + i + " is " + names[i]);
 }
 
-//reversing order
+//For Each Loop
+var names = ["Suzanne", "Cece", "Joan", "Charlie"];
 
-	var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+names.forEach(function (element, index, array) {
+    
+    console.log ("The name at index " + index + " is" + element);
+    // index is the iterator
+    // array is the shapes array itself
 
-	console.log(colors);
+    console.log('The shape at index ' + index + ' is: ' + element);
+});
 
-	console.log('Reversing the colors array.');
-
-	colors.reverse();
-
-	console.log(colors);
-
-//sorting (deault is ascending alpha/numeric order)
-
-	var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-
-	console.log(colors);
-
-	console.log('Sorting the colors array.');
-
-	colors.sort();
-
-	console.log(colors);
 
 
 

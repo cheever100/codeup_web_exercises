@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///Users/jeancheever/Downloads/dom-query-js%20(1).html -->
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>DOM: Query and Modify</title>
+</head>
+<body>
+    <h1 id="main-header">JavaScript is Cool</h1>
+    <ul>
+        <li data-dbid="1" text.color: blue>Item 1</li>
+        <li data-dbid="2">Item 2</li>
+        <li data-dbid="3" text.color: grey>Item 3</li>
+        <li data-dbid="4">Item 4</li>
+        <li data-dbid="5" text.color: grey>Item 5</li>
+    </ul>
+    <h2 id="sub-header text.color: blue" >Hello Again.</h2>
+    <p class="sub-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <script>
+        "use strict";
+        (function() {
+            // TODO: Uncomment next line and get the main header element by id
+        
+            var mainHeader = document.getElementbyId("main-header");
+
+            
+            // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+                SEE ABOVE.
+            // TODO: Uncomment the next line and get the sub header element by id
+            
+            var subHeader = document.getElementbyId("sub-header");;
+
+            // TODO: Set the text color of subHeader to blue
+                SEE ABOVE.
+            
+            // TODO: Uncomment the next line and get all list items
+            var listItems = document.listItems;
+
+            // TODO: Set text color on every other list item to grey
+                SEE ABOVE.
+
+            // TODO: Set text color of li with dbid = 1 to blue
+                SEE ABOVE.
+
+            // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+            
+            var subParagraphs = document.getElementsbyClassNames("sub-paragraph");
+
+            // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+            var listParagraphs = document.getElementsByTagName('p');
+            listParagraphs[0].innerText = "Mission Accomplished" 
+
+
+
+        })();
+    </script>
+
+
+</body></html>

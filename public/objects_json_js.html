@@ -10,6 +10,72 @@
 
 	"use strict";
 
+var = cars {
+		
+		"f-150" : {
+			"wheels": 4,
+			"make": "ford",
+			"model": "f-150",
+			"spare": true,
+			"transmission": "automatic"
+		},
+		
+		"mazda 3" : {
+			"wheels": 4,
+			"make": "mazda",
+			"model": "mazda 3",
+			"spare": true,
+			"transmission": "manual",
+			"passegers": [
+			"Cameron",
+			"Riley",
+			"Cameron's mom",
+			"Mars"
+			]
+		}	
+	}	
+
+var books = [
+		
+			"Jane Eyre" : {
+				"author" : {
+				"firstName": "Charlotte"
+				"lastName" : "Brontë"
+				}
+			},
+		
+			"1984" : {
+			"author" : {
+				"firstName": "George"
+				"lastName" : "Orwell"
+				}
+			},
+		
+			"Pride and Prejudice" : {
+			"author" : {
+				"firstName": "Jane"
+				"lastName" : "Austen"
+				}
+			},
+		
+			"Wuthering Heights" : {
+			"author" : {
+				"firstName": "Emily"
+				"lastName" : "Brontë"
+				}
+			},
+		
+			"Of Mice and Men" : {
+			"author" : {
+				"firstName": "John"
+				"lastName" : "Steinbeck"
+				}
+			}
+]
+
+	console.log 
+  	
+ 	
 // todo:
 // Create an array of objects that represent books.
 // Each book should have a title and an author.
@@ -18,124 +84,18 @@
 // var books = [todo];
 
 // log out the books array
-
-
-	var books = [
-			{
-				"title": "Jane Eyre",  
-				"author" : {
-					"firstName": "Charlotte",  
-					"lastName" : "Brontë"
-				}
-			},
-		
-			{
-				"title": "1984", 
-					author : {
-					"firstName": "George",
-					"lastName" : "Orwell"
-				}
-			},
-		
-			{
-				"title": "Pride and Prejudice",  
-					author: {
-					"firstName": "Jane",
-					"lastName" : "Austen"
-				}
-			},
-		
-			{
-				"title": "Wuthering Heights",
-					author: {
-					"firstName": "Emily",
-					"lastName" : "Brontë"
-				}
-			},
-		
-			{
-				"title": "Of Mice and Men",
-					author: {
-						"firstName": "John",
-						"lastName" : "Steinbeck"
-				}
-			}
-	];
-
-  	console.log(books)
-		
-
+console.log(books);
 
 // todo:
 // Loop through the array of books using .forEach and print out the specified information about each one.
-
-
-
-
-
-});
-
-//answer 1
-var book = books[0];
-book.title
-
-
 // start loop here
-    //console.log("Book #" + todo);
-    console.log("Title: " + book.title);
-    console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+    console.log("Book #" + todo);
+    console.log("Title: " + todo);
+    console.log("Author: " + todo);
     console.log("---");
 // end loop here
 
-//answer 2
-books.forEach(function(book, index, array) {
-	console.log("Book number is " + (index + 1));
-	console.log("Title: " + book.title);
-    console.log("Author: " + book.author.firstName + " " + book.author.lastName);
-    console.log("---");
 
-});
-
-// bonus challenge: Make an array of strings that hold the entire info. I want a string that says 
-
-//"Infinite Jest was writen by David Foster Wallace", "Javascript the good parts was writen by Doug Crockford"
-		
-	var books = [		
-				{
-					"title": "Inifinite Jest",  
-					"author" : {
-						"firstName": "David Foster",  
-						"lastName" : "Wallace"
-					},
-			
-				{
-					"title": "Javascript, the Good Parts", 
-						author : {
-						"firstName": "Doug",
-						"lastName" : "Crockford"
-					}
-				
-			];
-
-//Step 1
-	var arrayOfStrings = [];
-	
-//Step 2
-//Step 3
-//Step 4
-	var string = "";
-	
-	books.forEach(function(book,index, array){
-		
-		string = book.title + "was wrtten by " + book.author.firstName + " " + book.author.lastName;
-		
-		arrayOfStrings.push(string);
-
-//Step 5
-
-	arrayOfStrings.forEach(function(string, index, array)) {
-		cosole.log(string);
-});    
 
 	</script>	
 </body>
