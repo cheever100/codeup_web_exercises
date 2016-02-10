@@ -6,7 +6,15 @@
     <title>DOM: Query and Modify</title>
 </head>
 <body>
+    
     <h1 id="main-header">Hello from Codeup</h1>
+
+    <button class="btn" id="change-header">Button 1</button>
+    <button class="btn" id="change-sub-header" data-btn="2">Button 2</button>
+    <button class="btn" id="button3" data-btn="3">Button 3</button>
+    <button class="btn" id="button4" data-btn="4">Button 4</button>
+
+   
     <ul>
         <li data-dbid="1">Item 1</li>
         <li data-dbid="2">Item 2</li>
@@ -27,6 +35,69 @@
 
     <script>
         "use strict";
+        
+        //Attach click event listeners to each of the buttons and have the handers perform the modifications that were automatically taking place. For example, the first button should set inner html of mainHeader to "JavaScript is Cool".
+        
+        //button 1
+            var button1 + document.getElementById("change-header");
+            button1.addEventListener("click", function() {
+            });
+
+        //button 2
+            var button2 = document.getElementById("change-subheader");
+            button2.addEventListener("click", function() {
+        
+            var subHeader = document.getElementById("sub-header");
+            subHeader.style.color = "blue";
+             });
+        
+        //button 3
+            var listItems = document.getElementById("change-list-items");
+             {
+            });
+
+        //button 4
+        var button1 + document.getElementById("change-header");
+        button1.addEventListener("click", function() {
+        });
+
+        
+
+        //Feb 8 exercise
+        var mainHeader = document.getElementById('main-header');
+        mainHeader.innerHTML = "JavaScript is Cool, yo";
+
+        var subHeader = document.getElementById('sub-header');
+        subHeader.style.color = "blue";
+
+        var listItems = document.getElementsByTagName("li");
+        for (var i=0; i < listItems.length; i++);
+
+
+
+
+
+
+
+        var button 1 = document.getElementsById('sub-header');
+
+        var listener = function (event) {
+        console.log(event);
+        }
+
+        for(var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', listener);
+        }
+
+
+
+
+
+
+
+
+
+
         (function() {
             
             // TODO: Uncomment next line and get the main header element by id
