@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<title>Jquery Exercises</title>
+	<style type="text/css">
+	.snazzy{
+		color: "blue";
+		background-color: "pink";
+	}
+	.notSoSnazzy{
+		color: "red";
+		background-color: "salmon";
+	}</style>
+
+</head>
+<body>
+<h1 class=codeup>Jquery Exercises</h1>
+
+<p id="foobar" class="codeup">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p id="batman" class="notSoSnazzy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<div><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+
+	<ul>
+	    <li class=codeup>The first list item.</li>
+	    <li>The second list item.</li>
+	    <li>The third list item.</li>
+	</ul>
+	
+<div></div>
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	
+	//alert($('#foobar').html());
+
+	//alert($('#batman').html());
+
+//Using jQuery, create a border around all elements with the class codeup that is 1 pixel //wide and red.
+	
+	//$(function(){
+	//$('.codeup').css({
+	//	    'border-color': 'red',
+    //		'border-width': '1px',
+    //		'border-style': 'solid'
+	//})
+	//})
+
+// Using jQuery, set the font-size of all li elements to 20px.
+	$(function(){
+		$('li').css('font-size','20px');
+
+// Craft selectors that highlight all the h1, p, and li elements.
+	
+		//$('h1, p, li').css('color','red');
+		$('*').css('color','blue');
+		
+// Create a jQuery statement to alert the contents of your h1 element(s).
+	
+		alert($('h1').html());
+	})
+
+	</script>
+
+</body>
+</html>
