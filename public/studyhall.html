@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<!-- BUTTON -->
+	<button id="btnToClick">Click Me</button>
+
+<!-- CLASS & LIST -->
+	<h1>List One</h1>
+		<ul>
+		    <li class="odd list-one-item">List 1, Item 1</li>
+		    <li class="even list-one-item">List 1, Item 2</li>
+		</ul>
+
+	<h1>List Two</h1>
+		<ul>
+		    <li class="odd list-two-item">List 2, Item 1</li>
+		    <li class="even list-two-item">List 2, Item 2</li>
+		</ul>
+
+<!-- FORM -->
+	<form name="login">
+	    <div>
+	        <label for="username">Username</label>
+	        <input id="username" name="username" type="text">
+	    </div>
+	    <div>
+	        <label for="password">Password</label>
+	        <input id="password" name="password" type="password">
+	    </div>
+	    <div>
+	        <input type="submit">
+	    </div>
+	</form>
+
+<!-- Accessing or Modifying Inner HTML and Text -->
+	<h1 id="main-heading">Hello World!</h1>
+		<div id="main-section">
+		    <p>Paragraph 1</p>
+		    <p>Paragraph 2</p>
+		</div>
+  
+<script>
+
+    "use strict";
+
+// BUTTON
+
+    (function() {
+        var btnToClick = document.getElementById('btnToClick');
+        console.log(btnToClick); // prints <button id="btnToClick">Click Me</button>
+    })();
+
+// CLASS
+	(function() {
+        var evenElements = document.getElementsByClassName('even');
+        // Print all elements
+        for (var i = 0; i < evenElements.length; i++) {
+            console.log(evenElements[i]); // must be accessed by as an array.
+        }
+    })();
+
+// LIST
+	(function() {
+     	var listItems = document.getElementsByTagName('li');
+     	for (var i = 0; i < listItems.length; i++) {
+            console.log(listItems[i]); // must be accessed by as an array.
+        }
+    })()
+
+// FORM 
+	(function() {
+        var usernameInput = document.forms.login.username;  
+        console.log(username);
+    })();
+
+// Accessing or Modifying Inner HTML and Text
+
+	(function() {
+		var mainHeading = document.getElementById('main-heading');
+        // Get the main heading h1 by id
+        	console.log(mainHeading.innerHTML);
+
+</script>
+
+
+</body>
+</html>

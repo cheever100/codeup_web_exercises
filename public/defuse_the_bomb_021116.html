@@ -8,34 +8,46 @@
 
     <button id="defuser">Defuse the BOM</button>
 
-    <script>
+    <script>    
+
+        var interval = 1000; // interval time in milliseconds
         var detonationTimer = 5;
 
-        // TODO: This function needs to be called once every second
-        
-        var interval = 1000; // delay time in seconds
-
         function updateTimer(){
-            
+        	
             if (detonationTimer == 0) {
                 alert('EXTERMINATE!');
                 document.body.innerHTML = '';
-                clearInterval(intervalId);
-            } else if (detonationTimer > 0) {
-                document.getElementById('timer').innerHTML = detonationTimer;  
+            } else 
+            	if (detonationTimer > 0) {
+                document.getElementById('timer').innerHTML = detonationTimer;
             }
-            
+
             detonationTimer--;
         }
-
-        var intervalId = setInterval(updateTimer, interval);
+        var startCountdown = setInterval(updateTimer,interval);
 
         // TODO: When this function runs, it needs to
         // cancel the interval/timeout for updateTimer()
-        function defuseTheBOM()
-        {
-            cleardetonationTimer
+        
+        function defuseTheBOM() {
+        	var count = 0;
+			var max = 5;
+			var interval = 1000; // interval time in milliseconds
+
+			var intervalId = setInterval(function () {
+    		if (count >= max) {
+        	clearInterval(intervalId);
+        	console.log('All done');
+    		} else {
+        	count++;
+        	console.log('Repeating this line ' + count);
+    		}
+			}, interval);
+
         }
+
+
 
         // Don't modify anything below this line!
         //
