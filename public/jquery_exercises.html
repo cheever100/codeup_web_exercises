@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<h1 class=codeup>Jquery Exercises</h1>
+<h1 id="mk" class=codeup>Jquery Exercises</h1>
 
 <p id="foobar" class="codeup">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <p id="batman" class="notSoSnazzy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -46,18 +46,46 @@
 	//})
 
 // Using jQuery, set the font-size of all li elements to 20px.
-	$(function(){
-		$('li').css('font-size','20px');
+//	$(function(){
+//		$('li').css('font-size','20px');
 
 // Craft selectors that highlight all the h1, p, and li elements.
 	
-		//$('h1, p, li').css('color','red');
-		$('*').css('color','blue');
+//		//$('h1, p, li').css('color','red');
+//		$('*').css('color','blue');
 		
 // Create a jQuery statement to alert the contents of your h1 element(s).
 	
-		alert($('h1').html());
-	})
+//		alert($('h1').html());
+//	})
+
+// Add jQuery code that will change the background color of an h1 element when clicked.
+  	(function(){	
+    
+	    $('h1').click(
+	    	function() {
+	            	$(this).css('background-color','blue');
+	    });
+
+// Make all paragraphs have a font size of 18px when they are double clicked.
+		
+		$('p').dblclick(
+			function() {
+				$(this).css('font-size','18px');
+			});
+
+// Set all li text color to red when the mouse is hovering, reset to white when it is not.
+	
+		$('li').hover(
+                function() {
+                    $(this).css('background-color', 'red');
+                },
+                function() {
+                    $(this).css('background-color', 'white');
+                }
+            );
+        
+	})();
 
 	</script>
 

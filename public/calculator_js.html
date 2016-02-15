@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<title>My Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/calculator.css">
+
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="display-screen">
+			<input id="left-operand" value="" readonly>
+			<input id="operator" value="" readonly>
+			<input id="right-operand" value="" readonly>
+		</div>
+		
+		<div class="keypad">
+         	<button class="number">1</button>
+         	<button class="number">2</button>
+         	<button class="number">3</button>
+         	<button class="operator">+</button>
+         	<br>
+         	<button class="number">4</button>
+         	<button class="number">5</button>
+         	<button class="number">6</button>
+         	<button class="operator">-</button>
+         	<br>
+         	<button class="number">7</button>
+         	<button class="number">8</button>
+         	<button class="number">9</button>
+         	<button class="operator">*</button>
+         	<br>
+         	<button id="clear">C</button>
+         	<button class="number">0</button>
+         	<button id="equal">=</button>
+         	<button class="operator">/</button>
+         	<br>
+		</div>
+
+	</div>
+
+<script type="text/javascript">
+	"use strict";
+
+	var displayLeft = document.getElementById("left-operand");
+	var displayCenter = document.getElementById("operator");
+	var displayRight = document.getElementById("right-operand");
+	var numberButton = document.getElementsByClassName("number");
+	var operatorButton = document.getElementsByClassName("operator");
+
+// Operator Button
+		function operatorInput (event) {
+			displayCenter.value = this.innerHTML;
+		};
+
+		for (var i=0; i < operatorButton.length; i++) {
+			operatorButton[i].addEventListener("click", operatorInput);
+		};
+
+// Number Button	
+		function numberInput (event) {
+			if (displayCenter.value == false) {
+				displayLeft.value += this.innerHTML;
+			}	else {
+				displayRight.value += this.innerHTML;
+			};
+		};
+
+		for (var i=0; i < numberButton.length; i++) {
+			numberButton[i].addEventListener("click", numberInput);
+		};
+
+// Clear Button
+		document.getElementById("clear").addEventListener("click", function(event){	
+			displayLeft.value = "";
+			displayCenter.value = "";
+			displayRight.value = "";
+		});
+
+// Equal Button (Addition)		
+		document.getElementById("equal").addEventListener("click", function(event){	
+			if (displayCenter.value == "+") {
+				var equation = parseInt(displayLeft.value) + parseInt(displayRight.value);
+				displayCenter.value = "";
+				displayRight.value = "";
+				displayLeft.value = equation;
+			};
+		});
+
+// Equal Button (Subtraction)		
+		document.getElementById("equal").addEventListener("click", function(event){	
+			if (displayCenter.value == "-") {
+				var equation = parseInt(displayLeft.value) - parseInt(displayRight.value);
+				displayCenter.value = "";
+				displayRight.value = "";
+				displayLeft.value = equation;
+			};
+		});
+
+// Equal Button (Multiplication)		
+		document.getElementById("equal").addEventListener("click", function(event){	
+			if (displayCenter.value == "*") {
+				var equation = parseInt(displayLeft.value) * parseInt(displayRight.value);
+				displayCenter.value = "";
+				displayRight.value = "";
+				displayLeft.value = equation;
+			};
+		});
+
+// Equal Button (Division)		
+		document.getElementById("equal").addEventListener("click", function(event){	
+			if (displayCenter.value == "/") {
+				var equation = parseInt(displayLeft.value) / parseInt(displayRight.value);
+				displayCenter.value = "";
+				displayRight.value = "";
+				displayLeft.value = equation;
+			};
+		});
+
+
+		
+</script>
+
+
+</body>
+</html>
