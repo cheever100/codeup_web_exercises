@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<title>Ajax Blog</title>
+</head>
+<body>
+
+	<div id="posts">
+	</div>
+
+	<div class="progress progress-striped active">
+	  <div class="progress-bar" style="width: 45%">
+	  </div>
+	</div>
+
+<script src="./animate_files/jquery.min.js"></script>
+<script type="text/javascript">
+
+$.ajax("/data/blog.json").done(function(data) {
+	    	console.log("Data returned from server:");
+	        console.log(data);
+		});
+
+
+
+
+
+
+</script>
+</body>
+</html>

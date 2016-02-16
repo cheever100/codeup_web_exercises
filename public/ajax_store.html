@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+	<title>Ajax Store</title>
+</head>
+<body>
+   	
+   	<script src="./animate_files/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$.ajax("/data/inventory.json").done(function(posts) {
+	    	console.log("Data returned from server:");
+	        console.log(posts);
+	        var post = posts[0]
+		});
+
+
+
+</script>
+</body>
+</html>
+
