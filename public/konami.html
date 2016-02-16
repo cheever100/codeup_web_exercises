@@ -11,17 +11,28 @@
 	        "use strict";
 
 		(function(){
+			
+			var keySelected = [38,38,40,40,37,39,37,39,66,65];
+			var i = 0;
+			
+			
 			$(document).keyup(function(event){
 	            console.log(event.keyCode);
+	        
+		        if (event.keyCode == keySelected[i]) {		   
+		        	i += 1;
+		        	if (i == keySelected.length) {
+		        		console.log ("You have added 30 lives!")
+		        	};
+
+		        } else {
+		        	alert("Wrong key, start over.");
+		        	i = 0;
+		        };
+		        	  
 	        });
 	    
-	    	$(document).ready(function() {
-            $('#textfield').keydown(function() {
-                alert('.keydown() 'You have added 30 lives!');
-	    	});
-			
-			});
-		})()
+		})();
 	        
 
 	    </script>
