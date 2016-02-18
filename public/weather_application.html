@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<title>Weather Application</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	$.get("http://api.openweathermap.org/data/2.5/weather", {
+	    APPID: "194a44e33b12f3ecee3454e47fce58f1",
+	    q:     "New York, NY"
+	}).done(function(weather_data) {
+	    console.log(weather_data);
+	});
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+

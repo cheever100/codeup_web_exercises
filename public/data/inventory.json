@@ -8,7 +8,7 @@
         "price": 20
     }, {
         "title": "Drill",
-        "quantity": 5,
+        "quantity": 1,
         "categories": [
             "tool",
             "powered"
