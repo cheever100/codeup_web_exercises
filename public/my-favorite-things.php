@@ -1,6 +1,22 @@
 <?php
-// Create an array of your favorite things (5).
-$favThings = ['breakfast', 'walking', 'musicals', 'inventions', 'biographies'];	
+
+	function pageController() {
+    
+    	$favThings = ['breakfast', 'walking', 'musicals', 'inventions', 'biographies'];	
+
+		$data = [
+			'favThings' => $favThings
+		];
+	
+    	return $data;    	
+	}
+
+	extract(pageController());
+
+	// var_dump($favThings);
+
+
+
 ?>
 
 <!doctype html>

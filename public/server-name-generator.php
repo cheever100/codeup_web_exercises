@@ -1,10 +1,28 @@
 <?php
-// create two arrays:
-// One containing at least 10 adjectives.
-// One containing at least 10 nouns.
+function pageController() {
+    
+    $comAdjs = ['basic', 'collaborative', 'digital', 'interactive', 'mobile', 'portable', 'remote', 'social', 'wearable', 'wireless'];
+	$comNouns = ['file', 'laptop', 'printer', 'screen', 'mouse', 'keyboard', 'website', 'monitor', 'skin', 'geek'];
 
-$comAdjs = ['basic', 'collaborative', 'digital', 'interactive', 'mobile', 'portable', 'remote', 'social', 'wearable', 'wireless'];
-$comNouns = ['file', 'laptop', 'printer', 'screen', 'mouse', 'keyboard', 'website', 'monitor', 'skin', 'geek'];
+	$rand_key_a = array_rand($comAdjs, 1);   	
+
+	$rand_key_n = array_rand($comNouns, 1);
+
+	$serverName = $comAdjs[$rand_key_a] . " " . $comNouns[$rand_key_n]; 
+
+    return array(
+    	'serverNamekey' => $serverName
+    );
+
+}
+
+// Call the pageController function and extract all the returned array as local variables.
+	extract(pageController());
+
+// Only use echo, conditionals, and loops anywhere within the HTML.
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -27,11 +45,10 @@ $comNouns = ['file', 'laptop', 'printer', 'screen', 'mouse', 'keyboard', 'websit
 	
 	<h4><i>Click refresh for random word combinations</i></h4>
   
-<?php $rand_key = array_rand($comAdjs, 1);   	
+  	
+	<?= $serverNamekey?>
 
-	  $rand_key = array_rand($comNouns, 1); ?>   	
 
-<?= $comAdjs[$rand_key] . " " . $comNouns[$rand_key]; ?>   
 
 </body>
 </html>
