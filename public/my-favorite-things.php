@@ -26,9 +26,9 @@ $favThings = ['breakfast', 'walking', 'musicals', 'inventions', 'biographies'];
 		</tr>
 
 <!-- Use an HTML table to display favorite things. -->
-  	<?php foreach ($favThings as $favThing) { ?>
-		<tr><td class="row-lines"><?php echo $favThing ?><td></tr>
-	<?php } ?>
+  	<?php foreach ($favThings as $favThing) : ?>
+		<tr><td class="row-lines"><?= $favThing ?><td></tr>
+	<?php endforeach; ?>
 		    
 	</table>
 

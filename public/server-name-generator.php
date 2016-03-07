@@ -21,15 +21,17 @@ $comNouns = ['file', 'laptop', 'printer', 'screen', 'mouse', 'keyboard', 'websit
 </head>
 
 <body>
+	
 	<h1><img src="/img/New-York-Times-logo.jpg" width="150" height="100"></h1>
 	<h1>Word Play by Will Short</h1>
+	
 	<h4><i>Click refresh for random word combinations</i></h4>
   
 <?php $rand_key = array_rand($comAdjs, 1);   	
 
 	  $rand_key = array_rand($comNouns, 1); ?>   	
 
-<?php  echo $comAdjs[$rand_key] . " " . $comNouns[$rand_key]; ?>   
+<?= $comAdjs[$rand_key] . " " . $comNouns[$rand_key]; ?>   
 
 </body>
 </html>
