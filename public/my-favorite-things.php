@@ -15,8 +15,6 @@
 
 	// var_dump($favThings);
 
-
-
 ?>
 
 <!doctype html>
