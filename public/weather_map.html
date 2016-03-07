@@ -120,9 +120,11 @@
                     console.log(results);                    
                     var cityMarker = new google.maps.Marker({
                         map: map,
-                        position: results[0].geometry.location
+                        position: results[0].geometry.location,
+                        draggable: true
                     });
-                    cityMarker.addListener('click', function() {
+                    
+                    cityMarker.addListener('dragend', function() {
                         infowindow.open(map, cityMarker);
                     });                  
                 } else {
