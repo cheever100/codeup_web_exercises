@@ -1,37 +1,34 @@
-<!doctype html>
+<?php
+// Create an array of your favorite things (5).
+$favThings = ['breakfast', 'walking', 'musicals', 'inventions', 'biographies'];	
+?>
 
+<!doctype html>
 <html>
 <head>
-	<title></title>
-	<style type="text/css">
-	table {border="2"};
+<title></title>
+
+<!-- added bootstrap to get table-striped -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
 	
+	<style>
+	#row-header {color: blue; font-size: 200%; text-align: center; width: 300px; border-style: solid;}
+	.row-lines {color: red; font-size: 100%; text-align: center; width: 300px; border-style: solid;}
 	</style>
+
 </head>
-<body>
-
-	<h2>Table</h2>                     
-		  
-	<table>
-
+<body>             
+	
+<!-- Use CSS to add a light gray background on every other row for a nice effect. -->
+	<table class="table table-striped"; border="1">
 		<tr>
-		  <th>Favorite Things</th>
+			<th id="row-header">Favorite Things</th>
 		</tr>
 
-  	<?php
-
-  	$favThings = ['breakfast', 'walking', 'musicals', 'inventions', 'biographies'];	
-
-  	foreach ($favThings as $favThing) {
-		
-		$item = $favThing;
-
-		echo "<tr>" . PHP_EOL;
-
-		echo "<td>" . $item . "</td>" . PHP_EOL;
-	}
-
-  	?>
+<!-- Use an HTML table to display favorite things. -->
+  	<?php foreach ($favThings as $favThing) { ?>
+		<tr><td class="row-lines"><?php echo $favThing ?><td></tr>
+	<?php } ?>
 		    
 	</table>
 

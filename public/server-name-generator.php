@@ -11,10 +11,13 @@ $comNouns = ['file', 'laptop', 'printer', 'screen', 'mouse', 'keyboard', 'websit
 <html>
 <head>
     <title>Server Name Generator</title>
+
+<!-- Add CSS to make it fancy. -->
     <style>
 		body {background-color:lightyellow;}
 		h1   {color:blue;}
 	</style>
+
 </head>
 
 <body>
