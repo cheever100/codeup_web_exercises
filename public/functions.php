@@ -1,24 +1,45 @@
 <?php
+// starts a session or finds a session
+// allows us to use $_SESSSION superglobal
+	session_start();
 
-// created function 
+// creates a function 
   	function inputHas($key) {
-// created isset to determine if key is in "REQUEST" array
   		$result = isset($_REQUEST[$key]);
-// returns true or false based on whether the key is available.  		
-  		return $result;
+  		return $result; // returns true or false based on whether the key is available 
   	}
 	  
-// created function 
-	function inputGet($key) {
-// created ternary operator
-		$input = (inputHas($key)) ? $_REQUEST[$key] : "";
-// returns the value of key OR null if the key is not set
-		return $input;
+
+// creates a function 
+  	function inputGet($key) {
+  		$result = isset($_REQUEST[$key]);
+  		echo $result; //returns the value specified by the key, or null if the key is not set.
+  	} else {
+  		echo "null";
+  	}
+	
+
+// checking if 'inputGet' key isset: returns the value specified by the key, or null if the key is not set.
+	if(isset($_REQUEST['inputGet']) {
+		$message = 'true';
+	} else {
+		$message = 'false';
 	}
 
-// created function 
-	function escape($input) { 
-// returns the input as a safely escaped string
-		return htmlspecialchars(strip_tags($input)); 
+// escape($input): returns the input as a safely escaped string.
+	if(isset($_REQUEST['inputGet']) {
+		$message = 'true';
+	} else {
+		$message = 'false';
 	}
+
+
+		
+
+
 ?>
+
+
+
+
+

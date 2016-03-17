@@ -6,7 +6,7 @@ class Person
 // Defined the properties.
     public $firstName;
     public $lastName;
-    public $fruit = array();
+    public $fruits = array();
 
 // Declared the method as 'roamCountryside()'
     public function roamCountryside()
@@ -16,17 +16,22 @@ class Person
         return $this->firstName . " walks {$distance} miles west.";
     }
 
-// Declared the method as 'qeeFruit()'
+// Declared the method as 'addFruit()'
     public function addFruit($fruit)
     {
-        $this->fruit[] = $fruit;
+        $this->fruits[] = $fruit;
     }
 }
 
-// Called the method
-$john->addFruit('Arctic');
+// Created a new class instance.
+    $person = new Person;
 
 // Set class properties.
 $person->firstName = 'Johnny';
 $person->lastName  = 'Appleseed';
-$person->fruit     = array('Pink Lady', 'Gala', 'Fuji');
+$person->fruits     = array('Pink Lady', 'Gala', 'Fuji');
+$person->addFruit('honeycrisp');
+
+var_dump($person->fruits);
+
+echo $person->roamCountryside() . PHP_EOL;
