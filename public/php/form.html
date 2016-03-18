@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple HTML</title>
+	<style type="text/css" title="text/css" media "all">
+	label {
+		font-weight: bold;
+		color: #300ACC;
+	}
+	</style>
+</head>
+<body>
+<!-- Script 2.1 - form.html -->
+<form action="2_handle_form.php" method="post">
+
+	<fieldset><legend>
+		Enter your information in the form below:
+	</legend>
+
+	<p><label>
+		Name: 
+		<input type="text" name="name" size="20" maxlength="40" />
+		</label>
+	</p>
+	
+	<p><label>
+		Email Address: 
+		<input type="text" name="email" size="20" maxlength="40" />
+		</label>
+	</p>
+
+	<p><label>
+		Gender:
+		</label>
+<!-- radio buttons -->
+		<input type="radio" name="gender" value="M" />
+			Male
+		<input type="radio" name="gender" value="F" />
+			Female
+	</p>
+
+	<p><label>
+		Age:
+<!-- drop down menu -->
+		<select name="age">
+			<option value="0-29">Under 30
+			</option>
+			<option value="30-60">Between 30 and 60
+			</option>
+			<option value="60+">Over 60
+			</option>
+		</select></label></p>
+
+	<p><label>Comments:
+<!-- text box for comments -->
+		<textarea name="comments" rows="3" cols="40">
+		</textarea>
+		</label>
+	</p>
+
+	</fieldset>
+
+	<p align="center">
+<!-- submit button -->
+		<input type="submit" name="submit" value="Subit My Information" />
+	</p>
+
+</form>
+
+</body>
+
+</html>
