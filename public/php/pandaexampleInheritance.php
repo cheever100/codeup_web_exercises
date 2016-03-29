@@ -1,31 +1,50 @@
 <?php
 
+// CLASS CODE:
 class Panda 
 {
 
 // Properties
-	var $coat = 'fluffy';
-	var $colour;
+	public $coat = 'fluffy';
+	public $color;
 
-// Method
-	 function getCoat()
+// Coat Method
+	 public function getCoat()
 	 {
 	 return $this->coat; 
 	 }
 
-// Method
-	function getColour()
+// Color Method
+	public function getColor()
 	{
-	 return $this->colour;
+	 return $this->color;
 	}
 }
 
-class GiantPanda extends Panda 
-{
-// Create a new giant panda instance. 
-	$giantPanda = new GiantPanda;
-}
+// PROCEDURAL CODE:
+ // Create a new instance.
+	$panda = new Panda;
 
-// Get coat type.
-	echo $giantPanda->getCoat();	
+// Change the value of properties.
+ 	$panda->color = 'red';
+
+// Execute the coat method.
+	echo $panda->getCoat() . PHP_EOL;
+	echo $panda->getColor() . PHP_EOL;
+
+
+// extend the class
+class GiantPanda extends Panda
+{
+
+}
+// Create a new instance.
+$giantPanda = new GiantPanda;
+
+// get coat type
+echo $giantPanda->getCoat() . PHP_EOL;
+
+
+
+
 
